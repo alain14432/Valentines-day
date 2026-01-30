@@ -1,272 +1,259 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For You 💌</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated Background Layers -->
-  <div class="bg-aurora"></div>
-  <canvas id="starsCanvas"></canvas>
-  <canvas id="bgHearts"></canvas>
-  <canvas id="confetti"></canvas>
-  <canvas id="heartRain"></canvas>
-  
-  <!-- Cursor trail effect -->
-  <div class="cursor-heart" id="cursorHeart">💕</div>
-  <!-- Main Content -->
-  <main class="wrap" id="page">
-    <!-- Intro Header -->
-    <header class="hero">
-      <div class="floating-badge">
-        <span class="pulse-dot"></span>
-        💘 a little website for my favorite person
-      </div>
-      
-      <h1 class="title">
-        Hey, <span class="highlight" id="herName">Her Name</span>…
-      </h1>
-      
-      <div class="typewriter-container">
-        <p class="typewriter" id="typeLine"></p>
-        <span class="typing-cursor">|</span>
-      </div>
-      
-      <p class="subtitle">I wanted you to have a moment. Not just a text.</p>
-      
-      <!-- Love Counter -->
-      <div class="love-counter">
-        <div class="counter-title">💖 Days until Valentine's Day 💖</div>
-        <div class="counter-display" id="countdown">
-          <div class="counter-item">
-            <span class="counter-num" id="days">00</span>
-            <span class="counter-label">days</span>
-          </div>
-          <div class="counter-sep">:</div>
-          <div class="counter-item">
-            <span class="counter-num" id="hours">00</span>
-            <span class="counter-label">hours</span>
-          </div>
-          <div class="counter-sep">:</div>
-          <div class="counter-item">
-            <span class="counter-num" id="mins">00</span>
-            <span class="counter-label">mins</span>
-          </div>
-          <div class="counter-sep">:</div>
-          <div class="counter-item">
-            <span class="counter-num" id="secs">00</span>
-            <span class="counter-label">secs</span>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Envelope Section -->
-    <section class="stage">
-      <div class="stage-glow"></div>
-      <div class="stage-inner">
-        <!-- 3D Envelope -->
-        <div class="envelope-scene">
-          <div class="envelope" id="envelope">
-            <div class="envelope-back"></div>
-            <div class="envelope-letter">
-              <div class="letter-peek">💌 Open me...</div>
+    <!-- Animated Background Layers -->
+    <div class="bg-aurora"></div>
+    <canvas id="starsCanvas"></canvas>
+    <canvas id="bgHearts"></canvas>
+    <canvas id="confetti"></canvas>
+    <canvas id="heartRain"></canvas>
+    <!-- Cursor trail effect -->
+    <div class="cursor-heart" id="cursorHeart">💕</div>
+    <!-- Main Content -->
+    <main class="wrap" id="page">
+        <!-- Intro Header -->
+        <header class="hero">
+            <div class="floating-badge">
+                <span class="pulse-dot"></span>
+                💘 a little website for my favorite person
             </div>
-            <div class="envelope-flap"></div>
-            <div class="envelope-front"></div>
-            <div class="envelope-seal" id="seal">
-              <span>💗</span>
-              <div class="seal-glow"></div>
+            <h1 class="title">
+                Hey, <span class="highlight" id="herName">Lover</span>…
+            </h1>
+            <div class="typewriter-container">
+                <p class="typewriter" id="typeLine"></p>
+                <span class="typing-cursor">|</span>
             </div>
-          </div>
+            <p class="subtitle">I wanted you to have a moment. Not just a text.</p>
+            <!-- Love Counter -->
+            <div class="love-counter">
+                <div class="counter-title">💖 Days until Valentine's Day 💖</div>
+                <div class="counter-display" id="countdown">
+                    <div class="counter-item">
+                        <span class="counter-num" id="days">00</span>
+                        <span class="counter-label">days</span>
+                    </div>
+                    <div class="counter-sep">:</div>
+                    <div class="counter-item">
+                        <span class="counter-num" id="hours">00</span>
+                        <span class="counter-label">hours</span>
+                    </div>
+                    <div class="counter-sep">:</div>
+                    <div class="counter-item">
+                        <span class="counter-num" id="mins">00</span>
+                        <span class="counter-label">mins</span>
+                    </div>
+                    <div class="counter-sep">:</div>
+                    <div class="counter-item">
+                        <span class="counter-num" id="secs">00</span>
+                        <span class="counter-label">secs</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Envelope Section -->
+        <section class="stage">
+            <div class="stage-glow"></div>
+            <div class="stage-inner">
+                <!-- 3D Envelope -->
+                <div class="envelope-scene">
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-back"></div>
+                        <div class="envelope-letter">
+                            <div class="letter-peek">💌 Open me...</div>
+                        </div>
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-front"></div>
+                        <div class="envelope-seal" id="seal">
+                            <span>💗</span>
+                            <div class="seal-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CTA -->
+                <div class="cta-section">
+                    <button class="btn-magic" id="openBtn">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">Open your letter 💌</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-hearts">💕💗💕</div>
+            made with love by <b id="footerName">Alain</b> ♥
+        </footer>
+    </main>
+    <!-- ==================== LETTER OVERLAY ==================== -->
+    <div class="overlay hidden" id="overlay">
+        <div class="overlay-backdrop" id="overlayBack"></div>
+        <div class="letter-modal" id="letterModal">
+            <!-- Close Button -->
+            <button class="close-btn" id="closeBtn" aria-label="Close">
+                <span>✕</span>
+            </button>
+            <!-- The Letter Paper -->
+            <div class="paper">
+                <!-- Header -->
+                <div class="paper-header">
+                    <div class="paper-badge">💌</div>
+                    <div class="paper-meta">
+                        <div class="paper-to">To: <b id="toName">Lover</b></div>
+                        <div class="paper-from">From: <b id="fromName">Alain</b></div>
+                    </div>
+                </div>
+                <!-- Body -->
+                <div class="paper-body">
+                    <!-- Main Letter -->
+                    <div class="letter-content">
+                        <h2 class="letter-greeting">To my favorite person,</h2>
+                        <p class="letter-text">
+                            I don't love the distance… but I love <b>you</b>.
+                            Somehow you make my days softer, my smiles easier, and my heart feel full
+                            even from far away.
+                        </p>
+                        <p class="letter-text">
+                            You're the person I want to tell things to first.
+                            The person I replay in my head when I'm having a rough day.
+                            The person that makes "missing you" feel worth it.
+                        </p>
+                        <!-- Valentine Question -->
+                        <div class="question-box">
+                            <div class="question-glow"></div>
+                            <h3 class="question-title">Will you be my Valentine? 💘</h3>
+                            <div class="question-buttons">
+                                <button class="btn-yes" id="yesBtn">
+                                    <span class="btn-yes-bg"></span>
+                                    <span class="btn-yes-text">YES 💖</span>
+                                </button>
+                                <button class="btn-no" id="noBtn">no 😶</button>
+                            </div>
+                            <p class="question-hint">choose wisely 😌</p>
+                        </div>
+                        <div class="section-divider">
+                            <span>💕</span>
+                        </div>
+                        <!-- Reasons Section -->
+                        <div class="wow-cards">
+                            <div class="wow-card">
+                                <div class="wow-card-glow"></div>
+                                <h4 class="wow-card-title">✨ Reasons I'm down bad</h4>
+                                <ul class="wow-list">
+                                    <li>Your laugh fixes my whole mood</li>
+                                    <li>You're such a baddieeeeeee, unfairly the best baddie in the world (body tea 🍵)
+                                    </li>
+                                    <li>My future is only better with you in it</li>
+                                </ul>
+                            </div>
+                            <div class="wow-card">
+                                <div class="wow-card-glow"></div>
+                                <h4 class="wow-card-title">💫 One simple truth</h4>
+                                <p class="wow-card-text">
+                                    Even with miles between us, I still choose you. Again and again.
+                                    You're not just someone I love—you're someone I can't imagine not having in my life.
+                                </p>
+                                <div class="kiss-section">
+                                    <button class="kiss-btn" id="kissBtn">
+                                        <span>Press for a kiss 😚</span>
+                                    </button>
+                                    <span class="kiss-output" id="kissOut"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-divider">
+                            <span>📸</span>
+                        </div>
+                        <!-- Photo Gallery -->
+                        <div class="photo-section">
+                            <h4 class="photo-title">Us 🖼️</h4>
+                            <p class="photo-subtitle">my favorite moments with you</p>
+                            <div class="photo-grid">
+                                <div class="photo-item">
+                                    <img src="IMG_2726 2.JPG" alt="Us together" />
+                                    <div class="photo-overlay">
+                                        <span>💖</span>
+                                    </div>
+                                </div>
+                                <div class="photo-item">
+                                    <img src="IMG_2727 2.JPG" alt="Us together" />
+                                    <div class="photo-overlay">
+                                        <span>💕</span>
+                                    </div>
+                                </div>
+                                <div class="photo-item">
+                                    <img src="IMG_2728 2.JPG" alt="Us together" />
+                                    <div class="photo-overlay">
+                                        <span>💗</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-divider">
+                            <span>💝</span>
+                        </div>
+                        <!-- Interactive Love Meter -->
+                        <div class="love-meter-section">
+                            <h4 class="meter-title">How much I love you:</h4>
+                            <div class="love-meter">
+                                <div class="meter-fill" id="loveMeter"></div>
+                                <div class="meter-label">∞ / ∞</div>
+                            </div>
+                            <p class="meter-note">off the charts 📈💕</p>
+                        </div>
+                        <!-- Signature -->
+                        <div class="signature-section">
+                            <p class="signature-text">always yours,</p>
+                            <p class="signature-name" id="sigName">Alain</p>
+                            <div class="signature-hearts">💕💗💕</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- CTA -->
-        <div class="cta-section">
-          <button class="btn-magic" id="openBtn">
-            <span class="btn-bg"></span>
-            <span class="btn-text">Open your letter 💌</span>
-            <span class="btn-shine"></span>
-          </button>
-          <p class="hint">🔊 turn your sound on for the full experience</p>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-hearts">💕💗💕</div>
-      made with love by <b id="footerName">Your Name</b> ♥
-    </footer>
-  </main>
-  <!-- ==================== LETTER OVERLAY ==================== -->
-  <div class="overlay hidden" id="overlay">
-    <div class="overlay-backdrop" id="overlayBack"></div>
-    
-    <div class="letter-modal" id="letterModal">
-      <!-- Close Button -->
-      <button class="close-btn" id="closeBtn" aria-label="Close">
-        <span>✕</span>
-      </button>
-      <!-- The Letter Paper -->
-      <div class="paper">
-        <!-- Header -->
-        <div class="paper-header">
-          <div class="paper-badge">💌</div>
-          <div class="paper-meta">
-            <div class="paper-to">To: <b id="toName">Her Name</b></div>
-            <div class="paper-from">From: <b id="fromName">Your Name</b></div>
-          </div>
-        </div>
-        <!-- Body -->
-        <div class="paper-body">
-          <!-- Main Letter -->
-          <div class="letter-content">
-            <h2 class="letter-greeting">My favorite person,</h2>
-            
-            <p class="letter-text">
-              I don't love the distance… but I love <b>you</b>.
-              Somehow you make my days softer, my smiles easier, and my heart feel full
-              even from far away.
-            </p>
-            
-            <p class="letter-text">
-              You're the person I want to tell things to first.
-              The person I replay in my head when I'm having a rough day.
-              The person that makes "missing you" feel worth it.
-            </p>
-            <!-- Valentine Question -->
-            <div class="question-box">
-              <div class="question-glow"></div>
-              <h3 class="question-title">Will you be my Valentine? 💘</h3>
-              <div class="question-buttons">
-                <button class="btn-yes" id="yesBtn">
-                  <span class="btn-yes-bg"></span>
-                  <span class="btn-yes-text">YES 💖</span>
+    </div>
+    <!-- ==================== CELEBRATION OVERLAY ==================== -->
+    <div class="celebrate hidden" id="celebrate">
+        <div class="celebrate-aurora"></div>
+        <canvas id="celebrateHearts"></canvas>
+        <div class="celebrate-modal">
+            <div class="celebrate-glow"></div>
+            <div class="celebrate-content">
+                <div class="celebrate-emoji">😭💘</div>
+                <h2 class="celebrate-title">SHE SAID YESSS</h2>
+                <p class="celebrate-subtitle">HI MY VALENTINE</p>
+                <div class="celebrate-text">
+                    <p>You just made my whole day.</p>
+                    <p>Screenshot this and send it to me 😌</p>
+                </div>
+                <div class="celebrate-pills">
+                    <span class="pill">💖 locked in</span>
+                    <span class="pill">💌 official</span>
+                    <span class="pill">✨ obsessed</span>
+                    <span class="pill">🔒 mine</span>
+                </div>
+                <button class="btn-magic celebrate-close" id="closeCelebrate">
+                    <span class="btn-bg"></span>
+                    <span class="btn-text">Close 💗</span>
+                    <span class="btn-shine"></span>
                 </button>
-                <button class="btn-no" id="noBtn">no 😶</button>
-              </div>
-              <p class="question-hint">choose wisely 😌</p>
             </div>
-            <div class="section-divider">
-              <span>💕</span>
-            </div>
-            <!-- Reasons Section -->
-            <div class="wow-cards">
-              <div class="wow-card">
-                <div class="wow-card-glow"></div>
-                <h4 class="wow-card-title">✨ Reasons I'm down bad</h4>
-                <ul class="wow-list">
-                  <li>your laugh fixes my whole mood</li>
-                  <li>you're my favorite notification</li>
-                  <li>you feel like peace</li>
-                  <li>you're cute in a way that's actually unfair</li>
-                  <li>everything is better when you're around</li>
-                </ul>
-              </div>
-              <div class="wow-card">
-                <div class="wow-card-glow"></div>
-                <h4 class="wow-card-title">💫 One simple truth</h4>
-                <p class="wow-card-text">
-                  Even with miles between us, I still choose you. Again and again. 
-                  You're not just someone I like—you're someone I can't imagine not having in my life.
-                </p>
-                <div class="kiss-section">
-                  <button class="kiss-btn" id="kissBtn">
-                    <span>Press for a kiss 😚</span>
-                  </button>
-                  <span class="kiss-output" id="kissOut"></span>
-                </div>
-              </div>
-            </div>
-            <div class="section-divider">
-              <span>📸</span>
-            </div>
-            <!-- Photo Gallery -->
-            <div class="photo-section">
-              <h4 class="photo-title">Us 🖼️</h4>
-              <p class="photo-subtitle">my favorite moments with you</p>
-              <div class="photo-grid">
-                <div class="photo-item">
-                  <img src="IMG_2726 2.JPG" alt="Us together" />
-                  <div class="photo-overlay">
-                    <span>💖</span>
-                  </div>
-                </div>
-                <div class="photo-item">
-                  <img src="IMG_2727 2.JPG" alt="Us together" />
-                  <div class="photo-overlay">
-                    <span>💕</span>
-                  </div>
-                </div>
-                <div class="photo-item">
-                  <img src="IMG_2728 2.JPG" alt="Us together" />
-                  <div class="photo-overlay">
-                    <span>💗</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section-divider">
-              <span>💝</span>
-            </div>
-            <!-- Interactive Love Meter -->
-            <div class="love-meter-section">
-              <h4 class="meter-title">How much I love you:</h4>
-              <div class="love-meter">
-                <div class="meter-fill" id="loveMeter"></div>
-                <div class="meter-label">∞ / ∞</div>
-              </div>
-              <p class="meter-note">off the charts 📈💕</p>
-            </div>
-            <!-- Signature -->
-            <div class="signature-section">
-              <p class="signature-text">always yours,</p>
-              <p class="signature-name" id="sigName">Your Name</p>
-              <div class="signature-hearts">💕💗💕</div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- ==================== CELEBRATION OVERLAY ==================== -->
-  <div class="celebrate hidden" id="celebrate">
-    <div class="celebrate-aurora"></div>
-    <canvas id="celebrateHearts"></canvas>
-    
-    <div class="celebrate-modal">
-      <div class="celebrate-glow"></div>
-      
-      <div class="celebrate-content">
-        <div class="celebrate-emoji">😭💘</div>
-        <h2 class="celebrate-title">SHE SAID YESSS</h2>
-        <p class="celebrate-subtitle">HI MY VALENTINE</p>
-        
-        <div class="celebrate-text">
-          <p>You just made my whole day.</p>
-          <p>Screenshot this and send it to me 😌</p>
-        </div>
-        
-        <div class="celebrate-pills">
-          <span class="pill">💖 locked in</span>
-          <span class="pill">💌 official</span>
-          <span class="pill">✨ obsessed</span>
-          <span class="pill">🔒 mine</span>
-        </div>
-        
-        <button class="btn-magic celebrate-close" id="closeCelebrate">
-          <span class="btn-bg"></span>
-          <span class="btn-text">Close 💗</span>
-          <span class="btn-shine"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-  <!-- Audio (optional - add your own song.mp3) -->
-  <!-- <audio id="song" src="song.mp3" loop></audio> -->
-  <script src="script.js"></script>
+    <!-- Audio (optional - add your own song.mp3) -->
+    <!-- <audio id="song" src="song.mp3" loop></audio> -->
+    <script src="script.js"></script>
 </body>
 </html>
