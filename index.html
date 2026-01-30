@@ -7,88 +7,111 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg"></div>
-  <canvas id="hearts"></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="glow"></div>
 
   <main class="wrap">
-    <header class="hero">
-      <div class="pill">💘 long distance / same heart</div>
-      <h1>Hey <span id="name">my love</span>…</h1>
-      <p class="type" id="type"></p>
-      <p class="sub">I made this for you because you deserve a proper moment.</p>
+    <header class="top">
+      <div class="tag">💘 made with love (and a little code)</div>
+      <h1>Hey, <span id="herName">my love</span>…</h1>
+      <p class="type" id="typeLine"></p>
+      <p class="sub">Open this like a letter. Because that’s what it is.</p>
     </header>
 
-    <section class="card big">
-      <h2>Will you be my Valentine? 💌</h2>
-      <p class="soft">
-        Even with miles in the way, you still feel like my favorite place to be.
-      </p>
+    <section class="envelopeCard">
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="env-flap"></div>
+        <div class="letter" id="letter">
+          <div class="letterTop">
+            <div class="stamp">💗</div>
+            <div class="tofrom">
+              <div>To: <b id="toName">you</b></div>
+              <div>From: <b id="fromName">me</b></div>
+            </div>
+          </div>
 
-      <div class="btns">
-        <button id="yes" class="btn yes">YES 💖</button>
-        <button id="no" class="btn no">no 😶</button>
-      </div>
+          <div class="letterBody">
+            <h2>My favorite person,</h2>
+            <p>
+              I don’t love the distance… but I love <b>you</b>.
+              Somehow you make my days softer, my smiles easier, and my heart feel full
+              even from far away.
+            </p>
 
-      <div id="result" class="result hidden">
-        <h3>AAAAAAAAA OKAY HI VALENTINE 😭💘</h3>
-        <p>
-          I’m so lucky it’s you. I’m planning a cute little date for us:
-          <br /><span class="plan">call + snacks + outfit + me being obsessed with you</span>
-        </p>
-        <div class="mini">
-          <div class="chip">📞 Video date</div>
-          <div class="chip">🍫 Snacks together</div>
-          <div class="chip">🎬 Movie / game</div>
-          <div class="chip">💋 Unlimited kisses (virtual)</div>
+            <p>
+              You’re the person I want to tell things to first.
+              The person I replay in my head when I’m having a rough day.
+              The person that makes “missing you” feel worth it.
+            </p>
+
+            <div class="question">
+              <h3>Will you be my Valentine? 💌</h3>
+              <div class="btnRow">
+                <button class="btn yes" id="yesBtn">YES 💖</button>
+                <button class="btn no" id="noBtn">no 😶</button>
+              </div>
+              <div class="yesBox hidden" id="yesBox">
+                <div class="big">YAYYYYY 😭💘</div>
+                <p>
+                  Okay hi Valentine. I’m really lucky it’s you.
+                  I love you (or I like you a lot… if we’re being shy 😌).
+                </p>
+                <p class="small">
+                  P.S. you can’t undo that YES. It’s on the internet now.
+                </p>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="miniGrid">
+              <div class="miniCard">
+                <div class="miniTitle">Little things I adore</div>
+                <ul>
+                  <li>your laugh = instant peace</li>
+                  <li>you’re my favorite notification</li>
+                  <li>the way you care (it shows)</li>
+                  <li>you’re cute… like unfairly cute</li>
+                </ul>
+              </div>
+
+              <div class="miniCard">
+                <div class="miniTitle">One simple truth</div>
+                <p class="soft">
+                  Even with miles between us, I still choose you.
+                  Again and again.
+                </p>
+              </div>
+            </div>
+
+            <div class="photos">
+              <div class="miniTitle">Us 🖼️</div>
+              <p class="soft small">Drop 3 pics in <code>/assets</code> (instructions below).</p>
+              <div class="strip">
+                <img src="IMG_2726.JPG" alt="pic 1" />
+                <img src="IMG_2727.JPG" alt="pic 2" />
+                <img src="IMG_2728.JPG" alt="pic 3" />
+              </div>
+            </div>
+
+            <div class="sig">
+              always yours,<br />
+              <span class="signature" id="sigName">your name</span>
+            </div>
+          </div>
         </div>
-        <p class="soft small">
-          P.S. Refreshing this page does not cancel the fact that you’re mine now.
-        </p>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h3>Little things I adore about you</h3>
-        <ul class="list">
-          <li>you’re my favorite notification</li>
-          <li>you make my bad days lighter</li>
-          <li>your laugh is literally therapy</li>
-          <li>you’re cute… like dangerously cute</li>
-          <li>you feel like home from far away</li>
-        </ul>
       </div>
 
-      <div class="card">
-        <h3>Our next mini bucket list</h3>
-        <ul class="list">
-          <li>matching selfies on call 📸</li>
-          <li>same meal in two cities 🍜</li>
-          <li>watch something and pretend we’re cuddling 🛋️</li>
-          <li>plan our first “no distance” date ✨</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
-      <h3>Us (drop your pics here)</h3>
-      <p class="soft small">Replace the image files in /assets (instructions below).</p>
-      <div class="gallery">
-        <img src="assets/pic1.jpg" alt="us 1" />
-        <img src="assets/pic2.jpg" alt="us 2" />
-        <img src="assets/pic3.jpg" alt="us 3" />
-        <img src="assets/pic4.jpg" alt="us 4" />
+      <div class="openRow">
+        <button class="btn ghost" id="openBtn">Open the letter 💌</button>
       </div>
     </section>
 
     <footer class="footer">
-      <p>Made with <span class="heart">♥</span> by <span id="from">[your name]</span></p>
+      <span>made by <b id="footerName">you</b> ♥</span>
     </footer>
   </main>
-
-  <!-- OPTIONAL: add music/voice note -->
-  <!-- Put an mp3 in /assets and rename it "song.mp3" -->
-  <!-- <audio id="song" src="assets/song.mp3" autoplay loop></audio> -->
 
   <script src="script.js"></script>
 </body>
