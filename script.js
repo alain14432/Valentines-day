@@ -1,7 +1,7 @@
 // ============================================
 // CUSTOMIZE THESE VALUES
 // ============================================
-const HER_NAME = "Lover";
+const HER_NAME = "Annie Nicole";
 const YOUR_NAME = "Alain";
 const TYPE_TEXT = "I know we're far apart and we hate it, but I will always cherish the happiness you bring to me through it, the way you cheer me on. Forever grateful 🤞❤️";
 const VALENTINES_DAY = new Date("February 14, 2026 00:00:00");
