@@ -508,3 +508,509 @@ body.modalOpen {
     padding: 20px;
   }
 }
+
+/* ========== CRITICAL: Hidden Class ========== */
+.hidden {
+  display: none !important;
+}
+
+/* ========== Counter Styles ========== */
+.counter-title {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.counter-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.counter-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.counter-sep {
+  font-size: 24px;
+  color: var(--pink-light);
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* ========== Paper Header Styles ========== */
+.paper-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: rgba(255, 90, 165, 0.08);
+  border-bottom: 1px solid var(--glass-border);
+}
+.paper-badge {
+  font-size: 36px;
+  animation: float 3s ease-in-out infinite;
+}
+.paper-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.paper-to,
+.paper-from {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.paper-to b,
+.paper-from b {
+  color: var(--pink-light);
+}
+
+/* ========== Letter Content Styles ========== */
+.letter-greeting {
+  font-family: var(--font-script);
+  font-size: 32px;
+  color: var(--pink-light);
+  margin-bottom: 20px;
+}
+.letter-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.letter-text b {
+  color: var(--pink-light);
+}
+
+/* ========== Question Box Styles ========== */
+.question-glow {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(ellipse at center, var(--pink-glow), transparent 70%);
+  opacity: 0.3;
+  z-index: -1;
+}
+.question-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--text-primary), var(--pink-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.question-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 60px;
+}
+.question-hint {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ========== Wow Card Styles ========== */
+.wow-card {
+  position: relative;
+  padding: 24px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.wow-card-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(180deg, var(--pink-glow), transparent);
+  opacity: 0.15;
+  pointer-events: none;
+}
+.wow-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--pink-light);
+  margin-bottom: 16px;
+  position: relative;
+}
+.wow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+.wow-list li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+}
+.wow-list li::before {
+  content: '💗';
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+}
+.wow-card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+/* ========== Kiss Section Styles ========== */
+.kiss-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.kiss-btn {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--pink-primary), var(--purple-primary));
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--transition-bounce);
+}
+.kiss-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px var(--pink-glow);
+}
+.kiss-output {
+  font-size: 18px;
+  color: var(--pink-light);
+  min-height: 24px;
+}
+
+/* ========== Section Divider Styles ========== */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+  position: relative;
+}
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+}
+.section-divider span {
+  padding: 0 16px;
+  font-size: 20px;
+}
+
+/* ========== Photo Section Styles ========== */
+.photo-section {
+  text-align: center;
+}
+.photo-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--pink-light);
+  margin-bottom: 8px;
+}
+.photo-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.photo-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s var(--transition-smooth);
+}
+.photo-item:hover img {
+  transform: scale(1.1);
+}
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 90, 165, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.photo-item:hover .photo-overlay {
+  opacity: 1;
+}
+.photo-overlay span {
+  font-size: 32px;
+}
+
+/* ========== Love Meter Styles ========== */
+.love-meter-section {
+  text-align: center;
+  margin: 24px 0;
+}
+.meter-title {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.love-meter {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+.meter-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.meter-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--pink-light);
+}
+
+/* ========== Signature Styles ========== */
+.signature-section {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--glass-border);
+}
+.signature-text {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.signature-hearts {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+/* ========== Letter Peek Styles ========== */
+.letter-peek {
+  font-size: 16px;
+  color: var(--bg-dark);
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+/* ========== Seal Glow ========== */
+.seal-glow {
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle, var(--pink-glow), transparent 70%);
+  z-index: -1;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ========== Stage Glow ========== */
+.stage-glow {
+  position: absolute;
+  inset: -50px;
+  background: radial-gradient(ellipse at center, var(--pink-glow), transparent 60%);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ========== Button Enhancements ========== */
+.btn-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--pink-primary), var(--purple-primary));
+  border-radius: 999px;
+  z-index: -1;
+}
+.btn-text {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: btnShine 3s ease-in-out infinite;
+}
+@keyframes btnShine {
+  0%, 100% { left: -100%; }
+  50% { left: 100%; }
+}
+.btn-magic {
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-main);
+}
+.btn-magic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 40px var(--pink-glow);
+}
+
+/* ========== Yes/No Button Enhancements ========== */
+.btn-yes {
+  position: relative;
+  overflow: hidden;
+}
+.btn-yes-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--pink-primary), #ff3d8a);
+  z-index: -1;
+}
+.btn-yes-text {
+  position: relative;
+  z-index: 1;
+}
+.btn-yes:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px var(--pink-glow);
+}
+
+/* ========== Celebration Styles ========== */
+.celebrate-aurora {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 100% 100% at 50% 50%, var(--pink-glow), transparent 60%),
+              radial-gradient(ellipse 80% 80% at 30% 70%, var(--purple-glow), transparent 60%);
+  animation: auroraShift 10s ease-in-out infinite alternate;
+  z-index: -1;
+}
+.celebrate-glow {
+  position: absolute;
+  inset: -60px;
+  background: radial-gradient(circle, var(--pink-glow), transparent 70%);
+  z-index: -1;
+  animation: pulse 2s ease-in-out infinite;
+}
+.celebrate-content {
+  position: relative;
+  z-index: 1;
+}
+.celebrate-emoji {
+  font-size: 64px;
+  margin-bottom: 16px;
+  animation: float 2s ease-in-out infinite;
+}
+.celebrate-title {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--pink-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.celebrate-subtitle {
+  font-size: 18px;
+  color: var(--pink-light);
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.celebrate-text {
+  margin-bottom: 24px;
+}
+.celebrate-text p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.celebrate-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.pill {
+  padding: 8px 16px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ========== Modal Animation ========== */
+@keyframes modalSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ========== Fade In Animation ========== */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== Footer Styles ========== */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.footer-hearts {
+  margin-bottom: 8px;
+  font-size: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ========== CTA Section ========== */
+.cta-section {
+  text-align: center;
+}
